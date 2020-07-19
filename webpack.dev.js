@@ -13,6 +13,7 @@ module.exports = {
         libraryTarget: 'var',
         library: 'Client'
     },
+    devServer: { port:8081},
     module: {
         rules: [
             {
