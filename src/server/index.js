@@ -1,6 +1,5 @@
 var path = require('path')
 const express = require('express')
-const mockAPIResponse = require('./mockAPI.js')
 const dotenv = require('dotenv');
 dotenv.config();
 const fetch = require("node-fetch");
@@ -30,10 +29,6 @@ app.listen(8080, function () {
     console.log('Example app listening on port 8080!')
 })
 
-app.get('/test', function (req, res) {
-    res.send(mockAPIResponse);
-    console.log(mockAPIResponse);
-})
 
 app.post('/analyze', function(req, res){
     let newData = req.body;

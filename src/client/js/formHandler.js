@@ -11,6 +11,8 @@ function handleSubmit(event) {
     
 }
 
+
+
 const postText = async (url = '', data = {})=>{
     const response = await fetch(url, {
         method: 'POST',
@@ -30,7 +32,6 @@ const postText = async (url = '', data = {})=>{
         console.log("error",error);
     }
 }
-
 
 function updateOutputField(data){
     if(data.length == 0){
