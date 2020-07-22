@@ -70,3 +70,5 @@ const getNewsData = async (url = '') =>{
         console.log("error",error);
     }
 }
+
+export{getNewsData}
