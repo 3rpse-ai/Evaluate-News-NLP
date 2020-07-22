@@ -1,4 +1,4 @@
-import { getNewsData } from '../server/index'
+const getNewsData = require('../server/index')
 
 describe('Test the get method', () => {
     test('It should response the GET method with a 200', () => {

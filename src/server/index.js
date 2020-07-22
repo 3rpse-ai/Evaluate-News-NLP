@@ -71,4 +71,4 @@ const getNewsData = async (url = '') =>{
     }
 }
 
-export{getNewsData}
+module.exports = getNewsData;
